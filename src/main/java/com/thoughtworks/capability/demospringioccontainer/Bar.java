@@ -1,5 +1,6 @@
 package com.thoughtworks.capability.demospringioccontainer;
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -7,6 +8,7 @@ public class Bar {
 
     private Foo foo;
 
+    @Lazy
     public Bar(Foo foo) {
         this.foo = foo;
     }
